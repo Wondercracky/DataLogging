@@ -7,7 +7,7 @@ on:
     - main
 
 jobs:
-  WondyBot_Job:
+  DataLogger_Job:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
