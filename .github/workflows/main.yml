@@ -4,10 +4,10 @@ name: CI
 on:
   push:
     branches: 
-    - master
+    - main
 
 jobs:
-  WondyBot_Job:
+  DataLogger_Job:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
