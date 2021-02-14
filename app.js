@@ -9,7 +9,9 @@ mongoose
   .then((_) => console.log("Connected to DB"))
   .catch((err) => console.error("error", err));
 
+  //Running every 24h
 setInterval(function(){
+    console.log("Logging to db")
     clanInfo();
     userInfo();
 }, 1000 * 60 * 60 * 24);

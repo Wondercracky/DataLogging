@@ -12,7 +12,6 @@ var methods = {
         for(const member of getClanInfo.memberList) {
             var tagString = member.tag;
             tagString = tagString.slice(1)
-            console.log(tagString);
             const memberInfo = await clash.getData(`/players/%23${tagString}`);
             array.push(memberInfo);
         }
