@@ -9,5 +9,7 @@ mongoose
   .then((_) => console.log("Connected to DB"))
   .catch((err) => console.error("error", err));
 
-clanInfo();
-userInfo();
+setInterval(function(){
+    clanInfo();
+    userInfo();
+}, 1000 * 60 * 60 * 24);

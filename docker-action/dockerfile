@@ -1,0 +1,15 @@
+FROM node:13
+
+ENV CLASH_TOKEN=none
+ENV CLASH_CLAN_TAG_ENCODED=none
+ENV MONGO_SERVER_IP=none
+
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+CMD ["node", "app.js"]

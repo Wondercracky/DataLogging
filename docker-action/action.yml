@@ -1,0 +1,5 @@
+name: "DataLogger"
+description: "Just logging some data"
+runs:
+  using: "docker"
+  image: "Dockerfile"
